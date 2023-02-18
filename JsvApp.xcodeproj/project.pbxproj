@@ -28,7 +28,6 @@
 		AE33D3F2299EE08000119E23 /* UIVIew+fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33D3F1299EE08000119E23 /* UIVIew+fill.swift */; };
 		AE6A6A95299D4D40002FDECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6A94299D4D40002FDECE /* AppDelegate.swift */; };
 		AE6A6A97299D4D40002FDECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6A96299D4D40002FDECE /* SceneDelegate.swift */; };
-		AE6A6A99299D4D40002FDECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6A98299D4D40002FDECE /* ViewController.swift */; };
 		AE6A6A9E299D4D45002FDECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6A6A9D299D4D45002FDECE /* Assets.xcassets */; };
 		AE6A6AAC299D4D46002FDECE /* JsvAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6AAB299D4D46002FDECE /* JsvAppTests.swift */; };
 		AE6A6AB6299D4D47002FDECE /* JsvAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6AB5299D4D47002FDECE /* JsvAppUITests.swift */; };
@@ -85,7 +84,6 @@
 		AE6A6A91299D4D40002FDECE /* JsvApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsvApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6A6A94299D4D40002FDECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE6A6A96299D4D40002FDECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AE6A6A98299D4D40002FDECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE6A6A9D299D4D45002FDECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE6A6AA2299D4D45002FDECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6A6AA7299D4D46002FDECE /* JsvAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsvAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,7 +226,6 @@
 				AE33D3E0299ED7A100119E23 /* presentation */,
 				AEAD8CDA29A0F7BF00145E98 /* domain */,
 				AE33D3C0299EA63400119E23 /* data */,
-				AE6A6A98299D4D40002FDECE /* ViewController.swift */,
 			);
 			path = JsvApp;
 			sourceTree = "<group>";
@@ -526,7 +523,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE6A6A99299D4D40002FDECE /* ViewController.swift in Sources */,
 				AE6A6A95299D4D40002FDECE /* AppDelegate.swift in Sources */,
 				AE33D3EB299EDC7E00119E23 /* SimpleListViewController.swift in Sources */,
 				AEAD8CC0299FCF1D00145E98 /* SimpleInteractorProtocol.swift in Sources */,
@@ -727,7 +723,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsv.JsvApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -759,7 +755,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsv.JsvApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
