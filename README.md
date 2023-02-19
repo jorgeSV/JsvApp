@@ -5,7 +5,7 @@ Viper Swift project
 
 Prueba técnica usando Viper y Coordinator como patrón de arquitectura.
 
-- Tabla simple con vista de detalle.
+- Tabla simple paginada con vista de detalle.
 - Vistas por código.
 - Se obtienen los datos del Api de Rick y Morty, para mostrar un listado paginado de los personajes, y el detalle de cada personaje seleccionado desde el listado previo.
 
@@ -18,6 +18,7 @@ Alamofire-image para la caché de las imágenes y mostrarlas tipo lazy.
 
 - Mejora de detalle.
 - Pulir UI.
-- Gestión de errores.
+- Busqueda o filtrado en el listado.
+- Gestión y muestra de errores.
 - Implementación de tests.
-- Utilizar otros apis configuradas con Targets.
+- Utilizar otros apis. (Configurando los Targets)
