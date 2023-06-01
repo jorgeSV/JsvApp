@@ -30,8 +30,7 @@
 		AE6A6A97299D4D40002FDECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6A96299D4D40002FDECE /* SceneDelegate.swift */; };
 		AE6A6A9E299D4D45002FDECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE6A6A9D299D4D45002FDECE /* Assets.xcassets */; };
 		AE6A6AAC299D4D46002FDECE /* JsvAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6AAB299D4D46002FDECE /* JsvAppTests.swift */; };
-		AE6A6AB6299D4D47002FDECE /* JsvAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6AB5299D4D47002FDECE /* JsvAppUITests.swift */; };
-		AE6A6AB8299D4D47002FDECE /* JsvAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A6AB7299D4D47002FDECE /* JsvAppUITestsLaunchTests.swift */; };
+		AEAB4E1A29A81132002E80B8 /* SimpleTitleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAB4E1929A81132002E80B8 /* SimpleTitleListView.swift */; };
 		AEAD8CC0299FCF1D00145E98 /* SimpleInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAD8CBE299FCF1D00145E98 /* SimpleInteractorProtocol.swift */; };
 		AEAD8CC1299FCF1D00145E98 /* SimpleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAD8CBF299FCF1D00145E98 /* SimpleInteractor.swift */; };
 		AEAD8CC4299FD29600145E98 /* SimpleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAD8CC2299FD29600145E98 /* SimpleRepository.swift */; };
@@ -48,13 +47,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		AE6A6AA8299D4D46002FDECE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE6A6A89299D4D3F002FDECE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE6A6A90299D4D40002FDECE;
-			remoteInfo = JsvApp;
-		};
-		AE6A6AB2299D4D47002FDECE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE6A6A89299D4D3F002FDECE /* Project object */;
 			proxyType = 1;
@@ -88,9 +80,7 @@
 		AE6A6AA2299D4D45002FDECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE6A6AA7299D4D46002FDECE /* JsvAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsvAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6A6AAB299D4D46002FDECE /* JsvAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsvAppTests.swift; sourceTree = "<group>"; };
-		AE6A6AB1299D4D47002FDECE /* JsvAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsvAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE6A6AB5299D4D47002FDECE /* JsvAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsvAppUITests.swift; sourceTree = "<group>"; };
-		AE6A6AB7299D4D47002FDECE /* JsvAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsvAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEAB4E1929A81132002E80B8 /* SimpleTitleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTitleListView.swift; sourceTree = "<group>"; };
 		AEAD8CBE299FCF1D00145E98 /* SimpleInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInteractorProtocol.swift; sourceTree = "<group>"; };
 		AEAD8CBF299FCF1D00145E98 /* SimpleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInteractor.swift; sourceTree = "<group>"; };
 		AEAD8CC2299FD29600145E98 /* SimpleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRepository.swift; sourceTree = "<group>"; };
@@ -116,13 +106,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AE6A6AA4299D4D46002FDECE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE6A6AAE299D4D47002FDECE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,7 +185,6 @@
 			children = (
 				AE6A6A93299D4D40002FDECE /* JsvApp */,
 				AE6A6AAA299D4D46002FDECE /* JsvAppTests */,
-				AE6A6AB4299D4D47002FDECE /* JsvAppUITests */,
 				AE6A6A92299D4D40002FDECE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -212,7 +194,6 @@
 			children = (
 				AE6A6A91299D4D40002FDECE /* JsvApp.app */,
 				AE6A6AA7299D4D46002FDECE /* JsvAppTests.xctest */,
-				AE6A6AB1299D4D47002FDECE /* JsvAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,15 +217,6 @@
 				AE6A6AAB299D4D46002FDECE /* JsvAppTests.swift */,
 			);
 			path = JsvAppTests;
-			sourceTree = "<group>";
-		};
-		AE6A6AB4299D4D47002FDECE /* JsvAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AE6A6AB5299D4D47002FDECE /* JsvAppUITests.swift */,
-				AE6A6AB7299D4D47002FDECE /* JsvAppUITestsLaunchTests.swift */,
-			);
-			path = JsvAppUITests;
 			sourceTree = "<group>";
 		};
 		AEAD8CCE29A0F5D700145E98 /* presenter */ = {
@@ -324,6 +296,7 @@
 		AEAD8CD629A0F75D00145E98 /* molecules */ = {
 			isa = PBXGroup;
 			children = (
+				AEAB4E1929A81132002E80B8 /* SimpleTitleListView.swift */,
 				AEAD8CCA299FF1FB00145E98 /* SimpleItemListView.swift */,
 				AEAD8CE329A146A600145E98 /* SimpleImageHeaderView.swift */,
 				AEAD8CCC29A0D37E00145E98 /* LoadingView.swift */,
@@ -427,24 +400,6 @@
 			productReference = AE6A6AA7299D4D46002FDECE /* JsvAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AE6A6AB0299D4D47002FDECE /* JsvAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE6A6AC1299D4D47002FDECE /* Build configuration list for PBXNativeTarget "JsvAppUITests" */;
-			buildPhases = (
-				AE6A6AAD299D4D47002FDECE /* Sources */,
-				AE6A6AAE299D4D47002FDECE /* Frameworks */,
-				AE6A6AAF299D4D47002FDECE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AE6A6AB3299D4D47002FDECE /* PBXTargetDependency */,
-			);
-			name = JsvAppUITests;
-			productName = JsvAppUITests;
-			productReference = AE6A6AB1299D4D47002FDECE /* JsvAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -460,10 +415,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					AE6A6AA6299D4D46002FDECE = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = AE6A6A90299D4D40002FDECE;
-					};
-					AE6A6AB0299D4D47002FDECE = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = AE6A6A90299D4D40002FDECE;
 					};
@@ -488,7 +439,6 @@
 			targets = (
 				AE6A6A90299D4D40002FDECE /* JsvApp */,
 				AE6A6AA6299D4D46002FDECE /* JsvAppTests */,
-				AE6A6AB0299D4D47002FDECE /* JsvAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -503,13 +453,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AE6A6AA5299D4D46002FDECE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE6A6AAF299D4D47002FDECE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,6 +489,7 @@
 				AE33D3EA299EDC7E00119E23 /* SimpleListPresenterProtocol.swift in Sources */,
 				AE33D3DC299EB6ED00119E23 /* SwiftExtensions.swift in Sources */,
 				AEAD8CC9299FE2CA00145E98 /* SimplePaginatedList.swift in Sources */,
+				AEAB4E1A29A81132002E80B8 /* SimpleTitleListView.swift in Sources */,
 				AE33D3CF299EA73300119E23 /* RamAPIDataSourceProtocol.swift in Sources */,
 				AE33D3E2299ED7D200119E23 /* SimpleCoordinator.swift in Sources */,
 				AEAD8CE229A0FAB600145E98 /* SimpleDetailViewController.swift in Sources */,
@@ -565,15 +509,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE6A6AAD299D4D47002FDECE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE6A6AB8299D4D47002FDECE /* JsvAppUITestsLaunchTests.swift in Sources */,
-				AE6A6AB6299D4D47002FDECE /* JsvAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -581,11 +516,6 @@
 			isa = PBXTargetDependency;
 			target = AE6A6A90299D4D40002FDECE /* JsvApp */;
 			targetProxy = AE6A6AA8299D4D46002FDECE /* PBXContainerItemProxy */;
-		};
-		AE6A6AB3299D4D47002FDECE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AE6A6A90299D4D40002FDECE /* JsvApp */;
-			targetProxy = AE6A6AB2299D4D47002FDECE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -806,40 +736,6 @@
 			};
 			name = Release;
 		};
-		AE6A6AC2299D4D47002FDECE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jsv.JsvAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JsvApp;
-			};
-			name = Debug;
-		};
-		AE6A6AC3299D4D47002FDECE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jsv.JsvAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JsvApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -866,15 +762,6 @@
 			buildConfigurations = (
 				AE6A6ABF299D4D47002FDECE /* Debug */,
 				AE6A6AC0299D4D47002FDECE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AE6A6AC1299D4D47002FDECE /* Build configuration list for PBXNativeTarget "JsvAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE6A6AC2299D4D47002FDECE /* Debug */,
-				AE6A6AC3299D4D47002FDECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

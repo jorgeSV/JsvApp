@@ -18,7 +18,7 @@ public struct RamPaginatedList <T:StructCodable> : StructCodable, SimplePaginate
             if let item = $0 as? SimpleListItemProtocol {
                 return item.convertToSimpleListItem()
             }
-            return SimpleListItem(id: 0, name: "", description: nil, descriptions: nil, status: nil, type: nil, image: nil)
+            return SimpleListItem(id: 0, name: "", description: nil, listTitle: nil, list: nil, status: nil, type: nil, image: nil)
         }))
     }
 }
