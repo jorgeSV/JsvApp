@@ -27,7 +27,8 @@ public struct RamCharacter : StructCodable, SimpleListItemProtocol {
         SimpleListItem(id: id ?? 0,
                        name: name ?? "",
                        description: "",
-                       descriptions: episode,
+                       listTitle: "Episodes",
+                       list: episode,
                        status: status,
                        type: type,
                        image: image)

@@ -71,9 +71,7 @@ public class SimpleImageHeaderView: UIView {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.clipsToBounds = true
-        NSLayoutConstraint.activate([
-            imageView.heightAnchor.constraint(equalToConstant: 360)
-        ])
+        imageView.heightAnchor.constraint(equalToConstant: 360).isActive = true
         return imageView
     }()
     

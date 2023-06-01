@@ -20,6 +20,7 @@ extension SimpleDetailViewController {
         }
         
         public struct Section {
+            var header: SimpleTitleListView.Model?
             var product: [Product]
         }
         
@@ -46,6 +47,7 @@ class SimpleDetailViewController: BaseViewController {
         }
         
         tableView.register(SimpleImageHeaderViewCell.self, forCellReuseIdentifier: SimpleImageHeaderViewCell.identifier)
+        tableView.register(SimpleTitleListViewHeader.self, forHeaderFooterViewReuseIdentifier: SimpleTitleListViewHeader.identifier)
         tableView.register(SimpleItemListViewCell.self, forCellReuseIdentifier: SimpleItemListViewCell.identifier)
         
         return tableView
@@ -124,21 +126,21 @@ extension SimpleDetailViewController: UITableViewDelegate, UITableViewDataSource
         }
         
         let section = sections[indexPath.section]
-        
-        switch section.product[indexPath.row] {
-        case .header(let model):
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: SimpleImageHeaderViewCell.identifier) as? SimpleImageHeaderViewCell else {
-                return UITableViewCell()
-            }
-            cell.configure(with: model)
-            return cell
             
-        case .item(let model):
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: SimpleItemListViewCell.identifier) as? SimpleItemListViewCell else {
-                return UITableViewCell()
-            }
-            cell.configure(with: model)
-            return cell
+        switch section.product[indexPath.row] {
+            case .header(let model):
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: SimpleImageHeaderViewCell.identifier) as? SimpleImageHeaderViewCell else {
+                    return UITableViewCell()
+                }
+                cell.configure(with: model)
+                return cell
+                
+            case .item(let model):
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: SimpleItemListViewCell.identifier) as? SimpleItemListViewCell else {
+                    return UITableViewCell()
+                }
+                cell.configure(with: model)
+                return cell
         }
     }
     
@@ -146,6 +148,26 @@ extension SimpleDetailViewController: UITableViewDelegate, UITableViewDataSource
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if sections.isEmpty {
+            return UITableViewHeaderFooterView()
+        }
+        
+        let section = sections[section]
+        
+        guard let headerModel = section.header,
+              let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SimpleTitleListViewHeader.identifier) as? SimpleTitleListViewHeader else {
+            return UITableViewHeaderFooterView()
+        }
+            
+        header.configure(with: headerModel)
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 }
 
 // MARK: - Presenter Delegate

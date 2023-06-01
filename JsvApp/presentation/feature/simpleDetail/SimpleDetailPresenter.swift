@@ -48,6 +48,10 @@ class SimpleDetailPresenter: BasePresenter {
             sections.append(section)
         }
         
+        if let section = getListSection() {
+            sections.append(section)
+        }
+        
         return sections
     }
     
@@ -58,17 +62,26 @@ class SimpleDetailPresenter: BasePresenter {
         
         if let image = item.image {
             products.append(.header(.init(image: image)))
+            return .init(product: products)
         }
         
-        if let descriptions = item.descriptions, !descriptions.isEmpty {
-            for description in descriptions {
-                products.append(.item(.init(title: description,
+        return nil
+    }
+    
+    private func getListSection() -> SimpleDetailViewController.Model.Section? {
+        var products = [SimpleDetailViewController.Model.Product]()
+        
+        if let list = item.list, !list.isEmpty {
+            for item in list {
+                products.append(.item(.init(title: item,
                                             image: nil,
                                             action: { _ in })))
             }
+            
+            return .init(header: .init(title: item.listTitle ?? ""), product: products)
         }
         
-        return SimpleDetailViewController.Model.Section(product: products)
+        return nil
     }
     
 }

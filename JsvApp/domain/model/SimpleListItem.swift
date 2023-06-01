@@ -16,7 +16,8 @@ public struct SimpleListItem {
     let id : Int
     let name : String
     let description: String?
-    let descriptions: [String]?
+    let listTitle: String?
+    let list: [String]?
     let status : String?
     let type : String?
     let image : String?
