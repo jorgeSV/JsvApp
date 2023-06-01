@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "81396C8E-550F-41A8-A89D-04BA9FE18449",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:JsvApp.xcodeproj",
+      "identifier" : "AE6A6A90299D4D40002FDECE",
+      "name" : "JsvApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:JsvApp.xcodeproj",
+        "identifier" : "AE6A6AA6299D4D46002FDECE",
+        "name" : "JsvAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}
