@@ -14,7 +14,7 @@ class RamAPIDataSource: BaseDataSource, RamAPIDataSourceProtocol {
     
     // MARK: - Singleton
     
-    public static let shared: RamAPIDataSourceProtocol = RamAPIDataSource()
+    @MainActor public static let shared: RamAPIDataSourceProtocol = RamAPIDataSource()
     
     // MARK: - Private Init
     

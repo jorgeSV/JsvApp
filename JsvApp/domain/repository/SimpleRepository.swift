@@ -8,17 +8,24 @@
 
 import Foundation
 
-public class SimpleRepository: SimpleRepositoryProtocol {
+@MainActor
+public class SimpleRepository: @preconcurrency SimpleRepositoryProtocol {
     
     // MARK: - Singleton
     
     public static let shared: SimpleRepositoryProtocol = SimpleRepository()
     
-    //MARK: Properties
+    // MARK: Properties
     
-    var ramApi: RamAPIDataSourceProtocol = RamAPIDataSource.shared
+    let ramApi: RamAPIDataSourceProtocol
     
-    //MARK: SimpleRepository functions
+    // MARK: - Initializer
+    
+    private init(ramApi: RamAPIDataSourceProtocol = RamAPIDataSource.shared) {
+        self.ramApi = ramApi
+    }
+    
+    // MARK: SimpleRepository functions
     
     public func getItems(url: String?, completion: @escaping SimpleItemsResult) {
         

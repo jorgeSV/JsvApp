@@ -152,7 +152,7 @@ extension SimpleListViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - Presenter Delegate
 
-extension SimpleListViewController: SimpleListPresenterDelegate {
+extension SimpleListViewController: @preconcurrency SimpleListPresenterDelegate {
     
     public func refresh() {
         DispatchQueue.main.async { [weak self] in

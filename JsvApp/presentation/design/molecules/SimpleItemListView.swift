@@ -51,7 +51,7 @@ public extension SimpleItemListView {
                 
         public typealias Action = (Model) -> Void
         
-        static let example = Model(
+        @MainActor static let example = Model(
             title: "NO NAME", image: "", action: { _ in }
         )
         

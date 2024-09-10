@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class BaseViewController: UIViewController, BasePresenterDelegate {
+public class BaseViewController: UIViewController, @preconcurrency BasePresenterDelegate {
     
     // MARK: - Properties
     

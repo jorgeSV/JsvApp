@@ -49,7 +49,7 @@ public extension SimpleImageHeaderView {
     
     struct Model {
                 
-        static let example = Model(
+        @MainActor static let example = Model(
             image: ""
         )
         

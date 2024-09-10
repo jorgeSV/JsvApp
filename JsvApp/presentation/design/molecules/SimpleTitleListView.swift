@@ -33,7 +33,7 @@ public class SimpleTitleListViewHeader: UITableViewHeaderFooterView {
 public extension SimpleTitleListView {
     
     struct Model {
-        static let example = Model(title: "Section Title")
+        @MainActor static let example = Model(title: "Section Title")
         
         var title: String
         

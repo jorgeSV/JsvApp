@@ -13,9 +13,9 @@ protocol SimpleDependenciesProtocol {
     func makeSimpleDetailView(_ signalDelegate: SimpleDetailSignalDelegate, selectedItem: SimpleListItem) -> SimpleDetailViewController
 }
 
-public class SimpleDependencies: SimpleDependenciesProtocol {
+public class SimpleDependencies: @preconcurrency SimpleDependenciesProtocol {
     
-    func makeSimpleListView(_ signalDelegate: SimpleListSignalDelegate) -> SimpleListViewController {
+    @MainActor func makeSimpleListView(_ signalDelegate: SimpleListSignalDelegate) -> SimpleListViewController {
         let simpleRepository = SimpleRepository.shared
         let simpleInteractor = SimpleInteractor(simpleRepository: simpleRepository)
         let presenter = SimpleListPresenter(signalDelegate: signalDelegate, simpleInteractor: simpleInteractor)
@@ -24,7 +24,7 @@ public class SimpleDependencies: SimpleDependenciesProtocol {
         return viewController
     }
     
-    func makeSimpleDetailView(_ signalDelegate: SimpleDetailSignalDelegate, selectedItem: SimpleListItem) -> SimpleDetailViewController {
+    @MainActor func makeSimpleDetailView(_ signalDelegate: SimpleDetailSignalDelegate, selectedItem: SimpleListItem) -> SimpleDetailViewController {
         let simpleRepository = SimpleRepository.shared
         let simpleInteractor = SimpleInteractor(simpleRepository: simpleRepository)
         let presenter = SimpleDetailPresenter(signalDelegate: signalDelegate,

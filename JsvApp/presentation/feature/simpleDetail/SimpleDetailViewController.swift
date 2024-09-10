@@ -172,7 +172,7 @@ extension SimpleDetailViewController: UITableViewDelegate, UITableViewDataSource
 
 // MARK: - Presenter Delegate
 
-extension SimpleDetailViewController: SimpleDetailPresenterDelegate {
+extension SimpleDetailViewController: @preconcurrency SimpleDetailPresenterDelegate {
     
     func refresh() {
         DispatchQueue.main.async { [weak self] in
